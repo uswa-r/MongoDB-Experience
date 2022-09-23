@@ -11,3 +11,9 @@ db.userCollection.insertOne({
 db.userCollection.find({
     name: "james"
 });
+//updating a NoSQL database:
+db.userCollection.update({
+    name: "james"
+}, {
+    $set: { age: 45 }
+});
