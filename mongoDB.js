@@ -7,4 +7,7 @@ db.userCollection.insertOne({
         "banana"
     ]
 });
-//deleting a value from NoSQL database
+//finding a value from NoSQL database:
+db.userCollection.find({
+    name: "james"
+});
