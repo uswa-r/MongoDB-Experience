@@ -7,13 +7,20 @@ db.userCollection.insertOne({
         "banana"
     ]
 });
+
 //finding a value from NoSQL database:
 db.userCollection.find({
     name: "james"
 });
-//updating a NoSQL database:
+
+//updating a value in a NoSQL database:
 db.userCollection.update({
     name: "james"
 }, {
     $set: { age: 45 }
+});
+
+//deleting a value from NoSQL database:
+db.userCollection.deleteOne({
+    "_id": ObjectId("123456789")
 });
