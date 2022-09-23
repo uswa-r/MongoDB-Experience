@@ -1,3 +1,4 @@
+//adding a value into NoSQL database:
 db.userCollection.insertOne({
     name: "James",
     email: "james@email.com",
@@ -6,3 +7,4 @@ db.userCollection.insertOne({
         "banana"
     ]
 });
+//deleting a value from NoSQL database
