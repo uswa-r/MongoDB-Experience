@@ -1,3 +1,5 @@
+//practiccing some MongoDB:
+
 //adding a value into NoSQL database:
 db.userCollection.insertOne({
     name: "James",
